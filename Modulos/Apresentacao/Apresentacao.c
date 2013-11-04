@@ -149,7 +149,7 @@ void fecha_produto(int *estadoUsuario){
 }
 
 void login_desenvolvedor(int *estadoUsuario){
-char nomeDesenvolvedor[TAM_NOME], senha[TAM_SENHA], identificador[TAM_EM];
+char nomeDesenvolvedor[TAM_NOME], senha[TAM_SENHA], e_mail[TAM_EM];
 int respostaLogica;
 
     printf("********** LOGIN **********\n");
@@ -212,7 +212,7 @@ void altera_desenvolvedor(int *estadoUsuario){
 
 void cadastra_produto(int *estadoUsuario){
 
-char codigoProduto[TAM_CD], nomeProduto[TAM_NP], tituloPostagem[TAM_VP];
+char codigoProduto[TAM_CD], nomeProduto[TAM_NP], versaoProduto[TAM_VP];
 
     if(estadoUsuario == USUARIO_DESLOGADO){
         printf("VOCE PRECISA ESTAR LOGADO PARA EXECUTAR ESSA ACAO.\n");
