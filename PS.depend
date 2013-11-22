@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1383248317 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\main.c
+	"Modulos\Apresentacao\Apresentacao.h"
+	"Modulos\Logica\Logica.h"
+	"Modulos\Persistencia\Persistencia_Produtos.h"
+	"Modulos\Persistencia\Persistencia_Usuario.h"
+	"Padroes.h"
+
+1383670968 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1384261381 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\padroes.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1383999301 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.h
+	"..\..\Padroes.h"
+
+1383667974 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1383671951 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1384000665 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.c
+	"Apresentacao.h"
+
+1384000518 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.c
+	"Logica.h"
+	"..\Persistencia\Persistencia_Produtos.h"
+	"..\Persistencia\Persistencia_Usuario.h"
+
+1384000467 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.c
+	"Persistencia_Produtos.h"
+
+1384261523 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.c
+	"Persistencia_Usuario.h"
+	"..\Logica\Logica.h"
+

@@ -1,0 +1,5 @@
+Nome:Persistencia_Produtos.c,Persistencia_Produtos.h
+Tempo estimado gasto no desenvolvimento: 5 dias
+Tempo efetivamente gasto: 5 dias
+Tamanho total estimado: 6kb
+Tamanho efetivo: 6kb

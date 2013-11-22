@@ -1,0 +1,5 @@
+Nome:Logica.c,Logica.h
+Tempo estimado gasto no desenvolvimento: 5 dias
+Tempo efetivamente gasto: 3 dias
+Tamanho total estimado: 10kb
+Tamanho efetivo: 6kb

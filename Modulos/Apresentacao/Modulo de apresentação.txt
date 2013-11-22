@@ -1,0 +1,5 @@
+Nome:Apresentacao.c,Apresentacao.h
+Tempo estimado gasto no desenvolvimento: 3 dias
+Tempo efetivamente gasto: 2 dias
+Tamanho total estimado: 10kb
+Tamanho efetivo: 11kb

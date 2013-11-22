@@ -18,14 +18,14 @@ void opcao_usuario(int *);
 void login_liderProjeto();
 void login_desenvolvedor();
 
-void cadastro_desenvolvedor();
-void altera_desenvolvedor(int *);
+void cadastroDesenvolvedor();
+void alteraDesenvolvedor(int *);
 
-void cadastra_produto(int *);
-void altera_produto(int *);
-void lista_produtos();
-void fecha_produto();
+void cadastraProduto(int *);
+void alteraProduto(int *);
+void listaProdutos();
+void fechaProduto();
 
-void cadastra_defeito();
+void cadastraDefeito();
 
 #endif

@@ -10,6 +10,8 @@
 #define USUARIO_LOGADO 1
 #define USUARIO_DESLOGADO 0
 
+#define INX_DESENVOLVEDOR -10
+#define INX_PRODUTO -11
 
 #define SUC_OPERACAO 0
 #define SUC_FUNCAO 0

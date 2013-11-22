@@ -22,7 +22,6 @@
 #define TAM_DA 10
 #define TAM_VP 5
 
-
 typedef struct listagens{
     char *informacao;
     struct listagens *proximo;
@@ -36,7 +35,7 @@ typedef struct defeito {
 } Defeito;
 
 typedef struct produto {
-    char codigoProduto[TAM_CD], nomeProduto[TAM_NP], versaoProduto[TAM_VP];bertu
+    char codigoProduto[TAM_CD], nomeProduto[TAM_NOME], versaoProduto[TAM_VP];
     int byteOffset;
 
 } Produto;
@@ -61,7 +60,7 @@ EXT_LOG int altera_desenvolvedor(char* novoUser, char* novaSenha, char* e_mail);
 
 EXT_LOG int cadastra_produto(char* nome,char* codigoProduto,char* versao_produto);
 
-EXT_LOG int altera_produto(char* nome,char* versao_produto);preencheProduto(codigoProduto, descricaoDefeito, codigoDefeito, dataAbertura);
+EXT_LOG int altera_produto(char* nome,char* versao_produto);
 
 EXT_LOG int cadastra_produto(char* e_mail,char* codigo,char* versao_produto);
 

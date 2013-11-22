@@ -46,49 +46,49 @@ int opcaoUsuario;
                 break;
 			case 3:
                 system("CLS");
-                cadastro_desenvolvedor();
+                cadastroDesenvolvedor();
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
             case 4:
                 system("CLS");
-                altera_desenvolvedor(estadoUsuario);
+                alteraDesenvolvedor(estadoUsuario);
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
 			case 5:
                 system("CLS");
-                cadastra_produto(estadoUsuario);
+                cadastraProduto(estadoUsuario);
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
             case 6:
                 system("CLS");
-                altera_produto(estadoUsuario);
+                alteraProduto(estadoUsuario);
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
             case 7:
                 system("CLS");
-                cadastra_defeito();
+                cadastraDefeito();
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
             case 8:
                 system("CLS");
-                fecha_produto();
+                fechaProduto();
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
                 break;
             case 9:
                 system("CLS");
-                lista_produtos();
+                listaProdutos();
                 system("PAUSE");
                 system("CLS");
                 menu_inicial(estadoUsuario);
@@ -110,24 +110,24 @@ int opcaoUsuario;
 
 
 
-void lista_produtos(){
+void listaProdutos(){
 
     Produto *produto;
     char codigoProduto[TAM_CD];
     printf("Digite o codigo do produto: ");
     scanf("%s", codigoProduto);
-    produto = listagem(codigoProduto);
+    produto = procura_produto(codigoProduto);
     if(produto == NULL){
         printf("O produto nao existe.\n");
     }
     else{
-        printf("Nome: %s\t", produto->nome);
-        printf("Codigo: %s\n\n", produto->codigo);
-        printf("Versao: %s\n", produto->versao);
+        printf("Nome: %s\t", produto->nomeProduto);
+        printf("Codigo: %s\n\n", produto->codigoProduto);
+        printf("Versao: %s\n", produto->versaoProduto);
     }
 }
 
-void fecha_produto(int *estadoUsuario){
+void fechaProduto(int *estadoUsuario){
     int respostaLogica;
     char codigoProduto[TAM_CD], codigoDefeito[TAM_DF];
     if(*estadoUsuario == USUARIO_DESLOGADO){
@@ -138,8 +138,8 @@ void fecha_produto(int *estadoUsuario){
     scanf("%s", codigoProduto);
     printf("Digite o identificador do comentario: ");
     scanf("%s", codigoDefeito);
-    respostaLogica = removeProduto(identificadorUsuario, codigoProduto, codigoDefeito);
-    if (respostaLogica == OP_SUCESSO){
+    //respostaLogica = removeProduto(e_mail, codigoProduto, codigoDefeito);
+    if (respostaLogica == SUC_OPERACAO){
         printf("O produto foi encerrado com sucesso.\n");
     }
     else{
@@ -173,19 +173,19 @@ int respostaLogica;
 void login_liderProjeto(int *estadoUsuario){
 }
 
-void cadastro_desenvolvedor(){
+void cadastroDesenvolvedor(){
 
 char nomeDesenvolvedor[TAM_NOME], e_mail[TAM_EM], senha[TAM_SENHA];
 int respostaLogica;
 
     printf("********** CADASTRO DE DESENVOLVEDOR **********\n");
     printf("Digite seu nome (ate 15 digitos): ");
-    scanf("%s", nomeUsuario);
+    scanf("%s", nomeDesenvolvedor);
     printf("Digite sua senha (ate 5 digitos): ");
     scanf("%s", senha);
     printf("Digite o seu e-mail (ate 20 digitos): ");
     scanf("%s", e_mail);
-    respostaLogica = preencheDesenvolvedor(nomeDesenvolvedor, e_mail, senha);
+    respostaLogica = cadastro_desenvolvedor(nomeDesenvolvedor, e_mail, senha);
     if(respostaLogica == SUC_FUNCAO){
         printf("Cadastro efetuador com sucesso.\n");
     }
@@ -194,7 +194,7 @@ int respostaLogica;
     }
 }
 
-void altera_desenvolvedor(int *estadoUsuario){
+void alteraDesenvolvedor(int *estadoUsuario){
     char novoNomeDesenv[TAM_NOME], novaSenha[TAM_SENHA];
 
     if(*estadoUsuario == USUARIO_DESLOGADO){
@@ -205,14 +205,14 @@ void altera_desenvolvedor(int *estadoUsuario){
         scanf("%s", novoNomeDesenv);
         printf("Digite a nova senha:");
         scanf("%s", novaSenha);
-        repostaLogica = atualizaDesenvoldedor(novoNomeDesenv, codigo, novaSenha);
+        //repostaLogica = atualizaDesenvoldedor(novoNomeDesenv, codigo, novaSenha);
         printf("Seus dados foram alterados com sucesso.\n");
     }
 }
 
-void cadastra_produto(int *estadoUsuario){
-
-char codigoProduto[TAM_CD], nomeProduto[TAM_NP], versaoProduto[TAM_VP];
+void cadastraProduto(int *estadoUsuario){
+int respostaLogica;
+char codigoProduto[TAM_CD], nomeProduto[TAM_NOME], versaoProduto[TAM_VP];
 
     if(estadoUsuario == USUARIO_DESLOGADO){
         printf("VOCE PRECISA ESTAR LOGADO PARA EXECUTAR ESSA ACAO.\n");
@@ -224,15 +224,14 @@ char codigoProduto[TAM_CD], nomeProduto[TAM_NP], versaoProduto[TAM_VP];
         scanf("%s", nomeProduto);
         printf("Digite o texto da postagem:");
         scanf("%s", versaoProduto);
-        respostaLogica = preencheProduto(codigoProduto, nomeProduto, versaoProduto);
+        respostaLogica = cadastra_produto(codigoProduto, nomeProduto, versaoProduto);
         printf("Produto cadastrado corretamente.\n");
     }
 }
 
-void altera_produto(int *estadoUsuario){
-
+void alteraProduto(int *estadoUsuario){
     char novoNomeProduto[TAM_NOME], novaVersao[TAM_VP];
-
+    int respostaLogica;
     if(*estadoUsuario == USUARIO_DESLOGADO){
     printf("VOCE PRECISA ESTAR LOGADO PARA EXECUTAR ESSA ACAO.\n");
     }
@@ -241,13 +240,14 @@ void altera_produto(int *estadoUsuario){
         scanf("%s", novoNomeProduto);
         printf("Digite a nova senha:");
         scanf("%s", novaVersao);
-        repostaLogica = atualizaProduto(novaVersao, codigoProduto, novaVersao);
+        //repostaLogica = atualizaProduto(novaVersao, codigoProduto, novaVersao);
         printf("Seus dados foram alterados com sucesso.\n");
+    }
 }
 
-void cadastra_defeito(int *estadoUsuario){
+void cadastraDefeito(int *estadoUsuario){
 char codigoProduto[TAM_CD], descricaoDefeito[TAM_DD], codigoDefeito[TAM_CD], dataAbertura[TAM_DA];
-
+int respostaLogica;
     if(estadoUsuario == USUARIO_DESLOGADO){
         printf("VOCE PRECISA ESTAR LOGADO PARA EXECUTAR ESSA ACAO.\n");
     }
@@ -258,7 +258,8 @@ char codigoProduto[TAM_CD], descricaoDefeito[TAM_DD], codigoDefeito[TAM_CD], dat
         scanf("%s", descricaoDefeito);
         printf("Digite a data da abertura:");
         scanf("%s", dataAbertura);
-        respostaLogica = preencheProduto(codigoProduto, descricaoDefeito, codigoDefeito, dataAbertura);
+        respostaLogica = cadastra_defeito(codigoProduto, descricaoDefeito, codigoDefeito, dataAbertura);
         printf("Defeito cadastrado corretamente.\n");
 
+    }
 }

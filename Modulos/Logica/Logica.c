@@ -31,8 +31,8 @@ void deleta_lista(Listagens* lista){
 Desenvolvedor* lista_desenvolvedor(char* e_mail){
     int temp;
     Desenvolvedor* desenv;
-    temp = recupera_desenvolvedor(e_mail,desenv);
-    if(temp==INX_DESENVOLVEDOR)
+    //temp = recupera_desenvolvedor(e_mail,desenv);
+    if(temp == INX_DESENVOLVEDOR)
         return NULL;
     return desenv;
 }
@@ -40,8 +40,8 @@ Desenvolvedor* lista_desenvolvedor(char* e_mail){
 Produto* procura_produto(char* codigo){
     int temp;
     Produto* produt;
-    temp = recupera_produto(codigo,produt);
-    if(temp==INX_PRODUTO)
+    //temp = recupera_produto(codigo,produt);
+    if(temp == INX_PRODUTO)
         return NULL;
     return produt;
 }
@@ -51,12 +51,13 @@ int altera_desenvolvedor(char* novoUser, char* novaSenha, char* e_mail){
     desenv = lista_desenvolvedor(e_mail);
     if(desenv == NULL)
         return FRACASSO_LN;
-    else cadastro_desenvolvedor(novoUser,e_mail,novaSenha);
+    else
+        cadastro_desenvolvedor(novoUser,e_mail,novaSenha);
 }
 
 int cadastro_desenvolvedor(char* nome, char* e_mail, char* senha){
-    Desenvolvedor *desenv=(Usuario *)malloc(sizeof(Desenvolvedor));
-    desenv = lista_desenvolvedor(e_mail);
+    Desenvolvedor *desenv=(Desenvolvedor *)malloc(sizeof(Desenvolvedor));
+    //desenv = lista_desenvolvedor(e_mail);
     if(desenv!=NULL){
         strcpy(desenv->nome,nome);
         strcpy(desenv->e_mail,e_mail);
@@ -75,13 +76,14 @@ int cadastro_desenvolvedor(char* nome, char* e_mail, char* senha){
 
 int cadastra_produto(char* nome,char* codigoProduto,char* versaoProduto){
     Produto *produt=(Produto *)malloc(sizeof(Produto));
-    Desenvolvedor *desenv=(Desenvolvedor *)malloc(sizeof(Desenvolvedor));
 
-    strcpy(produt->nome,nome);
-    strcpy(produt->codigo,codigoProduto);
-    strcpy(produt->versao,versao_produto);
-        if(armazena_produto(post)){
-            free(post);
+    //Desenvolvedor *desenv=(Desenvolvedor *)malloc(sizeof(Desenvolvedor));
+
+    strcpy(produt->nomeProduto,nome);
+    strcpy(produt->codigoProduto,codigoProduto);
+    strcpy(produt->versaoProduto,versaoProduto);
+        if(armazena_produto(produt)){
+            free(produt);
             return SUCESSO_LN;
         }
         else{
@@ -93,10 +95,10 @@ int cadastra_produto(char* nome,char* codigoProduto,char* versaoProduto){
 
 int cadastra_defeito(char* codigoProduto,char* codigoDefeito, char* descricaoDefeito, char* dataAbertura){
     Defeito *defeit=(Defeito *)malloc(sizeof(Defeito));
-    strcpy(defeit->codigoP,codigoProduto);
-    strcpy(defeit->codigoD,codigoDefeito);
-    strcpy(defeit->descricaoD,descricaoDefeito);
-    strcpy(defeit->dataAb,dataAbertura);
+    strcpy(defeit->codigoProduto,codigoProduto);
+    strcpy(defeit->codigoDefeito,codigoDefeito);
+    strcpy(defeit->descricaoDefeito,descricaoDefeito);
+    strcpy(defeit->dataAbertura,dataAbertura);
     if(armazena_defeito(defeit)){
         free(defeit);
         return SUCESSO_LN;
