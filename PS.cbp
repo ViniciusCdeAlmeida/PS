@@ -47,6 +47,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Modulos/Persistencia/Persistencia_Usuario.h" />
+		<Unit filename="Modulos/Teste/CuTest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Modulos/Teste/CuTest.h" />
+		<Unit filename="Modulos/Teste/Teste.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Modulos/Teste/Teste.h" />
 		<Unit filename="Padroes.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />

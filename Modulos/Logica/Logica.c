@@ -1,3 +1,9 @@
+/**
+* @file Apresentacao.h
+* @brief Contém Protótipos das funções de Apresentacao.c
+* @author Vinicius Correa de Almeida
+* @date Criação: 12/09/2013
+*/
 
 
 /* Includes ok */

@@ -1,0 +1,69 @@
+Alvo do teste : teste de cadastramento de desenvolvedor.
+
+1 - Localize PS.exe que está na pasta bin/Debug.
+2 - Comece PS.exe
+3 - Selecione a opção 1
+4 - Insira no nome: "Sistematica"
+5 - Insira na senha: "12345"
+6 - Insira no e-mail: "sistema@ps.com.br"
+
+Resultado esperado: Apresentar a seguinte mensagem: "Cadastro efetuado com sucesso."
+-----------------------------------//----------------------------------------
+Alvo do teste : teste de cadastramento de produto.
+
+1 - Localize PS.exe que está na pasta bin/Debug.
+2 - Comece PS.exe
+3 - Selecione a opção 4 que para o login do desenvolvedor
+4 - Insira no nome: "Sistematica"
+5 - Insira na senha: "12345"
+6 - Insira no e-mail: "sistema@ps.com.br"
+7 - Selecione a opção 2
+8 - Insira no nome: "Projeto PS"
+9 - Insira no codigo: "1111"
+10 - Insira na versão: "1.0"
+
+Resultado esperado: Apresentar a seguinte mensagem: "Produto cadastrado corretamente."
+-----------------------------------//----------------------------------------
+Alvo do teste : teste de cadastramento de defeito.
+
+1 - Localize PS.exe que está na pasta bin/Debug.
+2 - Comece PS.exe
+3 - Selecione a opção 4
+4 - Insira no nome: "Sistematica"
+5 - Insira na senha: "12345"
+6 - Insira no e-mail: "sistema@ps.com.br"
+7 - Selecione a opção 3
+8 - Insira no codigo: "2222"
+9 - Insira na descrição: "Linha 33"
+10 - Insira estado: "NOVO"
+11 - Insira na data de abertura: "01/11/2013
+
+Resultado esperado: Apresentar a seguinte mensagem: "Defeito cadastrado corretamente."
+-----------------------------------//----------------------------------------
+Alvo do teste : teste de cadastramento de lider de produto.
+
+1 - Localize PS.exe que está na pasta bin/Debug.
+2 - Comece PS.exe
+3 - Selecione a opção 4
+4 - Insira no nome: "Sistematica"
+5 - Insira na senha: "12345"
+6 - Insira no e-mail: "sistema@ps.com.br"
+7 - Selecione a opção 5
+8 - Insira o e-mail: "vinicius@ps.com.br"
+9 - Insira o codigo do produto: "1111" 
+
+Resultado esperado: Apresentar a seguinte mensagem: "Lider de produto alocado corretamente."
+-----------------------------------//----------------------------------------
+Alvo do teste : teste de para candidatar-se para a solução do feito.
+
+1 - Localize PS.exe que está na pasta bin/Debug.
+2 - Comece PS.exe
+3 - Selecione a opção 4
+4 - Insira no nome: "Sistematica"
+5 - Insira na senha: "12345"
+6 - Insira no e-mail: "sistema@ps.com.br"
+7 - Selecione a opção 6
+8 - Insira o e-mail: "vinicius@ps.com.br"
+9 - Insira o codigo do defeito: "2222"
+
+Resultado esperado: Apresentar a seguinte mensagem: "Candidatou-se corretamente."

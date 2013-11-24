@@ -1,6 +1,17 @@
+/**
+* @file Apresentacao.h
+* @brief  Faz operações de output e input. Trabalhando diretamente com a Lógica de Negócio.
+* @author Vinicius Correa de Almeida
+* @date Criação: 02/09/2013
+*/
+
+
 /* Includes */
 #include "Apresentacao.h"
 
+/*
+ Função responsável por invocar as diversas funções do menu dependendo da escolha do usuário.
+*/
 void menu_inicial(int *estadoUsuario){
 
     printf("**************************************************************\n");
@@ -147,7 +158,8 @@ void fechaProduto(int *estadoUsuario){
         }
     }
 }
-
+/* Recebe do desenvolvedor nome, senha e e-mail e manda esses dados para a lógica de negócio.
+*/
 void login_desenvolvedor(int *estadoUsuario){
 char nomeDesenvolvedor[TAM_NOME], senha[TAM_SENHA], e_mail[TAM_EM];
 int respostaLogica;
@@ -173,6 +185,11 @@ int respostaLogica;
 void login_liderProjeto(int *estadoUsuario){
 }
 
+/*
+ Função recebe os dados Nome do desenvolvedor, Senha e E-mail.
+ Passa esses dados para a lógica de negócio.
+ E por fim informa ao usuário o resultado.
+*/
 void cadastroDesenvolvedor(){
 
 char nomeDesenvolvedor[TAM_NOME], e_mail[TAM_EM], senha[TAM_SENHA];
@@ -193,7 +210,10 @@ int respostaLogica;
         printf("E-mail de desenvolvedor ja existe.\n");
     }
 }
-
+/* Verifica se o desenvolvedor está autenticado.
+Se estiver recebe as novas informações do usuário e manda para a lógica.
+Imprime resultado.
+*/
 void alteraDesenvolvedor(int *estadoUsuario){
     char novoNomeDesenv[TAM_NOME], novaSenha[TAM_SENHA];
 
@@ -209,7 +229,10 @@ void alteraDesenvolvedor(int *estadoUsuario){
         printf("Seus dados foram alterados com sucesso.\n");
     }
 }
-
+/* Verifica se o usuario esta autenticado.
+Recebe os dados relacionados a produto e manda para a lógica de negócio.
+Imprime o resultado.
+*/
 void cadastraProduto(int *estadoUsuario){
 int respostaLogica;
 char codigoProduto[TAM_CD], nomeProduto[TAM_NOME], versaoProduto[TAM_VP];
@@ -244,7 +267,10 @@ void alteraProduto(int *estadoUsuario){
         printf("Seus dados foram alterados com sucesso.\n");
     }
 }
-
+/* Verifica se o usuario está logado.
+Manda as informações relacionadas ao defeito para a lógica.
+Imprime resultado.
+*/
 void cadastraDefeito(int *estadoUsuario){
 char codigoProduto[TAM_CD], descricaoDefeito[TAM_DD], codigoDefeito[TAM_CD], dataAbertura[TAM_DA];
 int respostaLogica;
