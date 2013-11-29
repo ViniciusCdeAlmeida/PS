@@ -1,10 +1,8 @@
 #ifndef TESTE_H_INCLUDED
 #define TESTE_H_INCLUDED
 
-#include "/Modulos/Apresentacao/Apresentacao.c"
-#include "/Modulos/Logica/Logica.c"
-#include "/Modulos/Persistencia/Persistencia_Usuario.c"
-#include "/Modulos/Persistencia/Persistencia_Produtos.c"
+#include "../../Padroes.h"
+#include "CuTest.c"
 
 #define CADASTRO_VALIDO 1
 

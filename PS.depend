@@ -1,45 +1,152 @@
 # depslib dependency file v1.0
-1383248317 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\main.c
+1385651938 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\main.c
+	"Padroes.h"
 	"Modulos\Apresentacao\Apresentacao.h"
 	"Modulos\Logica\Logica.h"
 	"Modulos\Persistencia\Persistencia_Produtos.h"
 	"Modulos\Persistencia\Persistencia_Usuario.h"
-	"Padroes.h"
 
-1383670968 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.h
+1385651872 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.h
 	"..\..\Padroes.h"
 	"..\Logica\Logica.h"
 
-1384261381 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\padroes.h
+1385651904 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\padroes.h
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<string.h>
 	<time.h>
 
-1383999301 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.h
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.h
 	"..\..\Padroes.h"
 
-1383667974 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.h
-	"..\..\Padroes.h"
-	"..\Logica\Logica.h"
-
-1383671951 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.h
+1385651883 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.h
 	"..\..\Padroes.h"
 	"..\Logica\Logica.h"
 
-1384000665 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.c
+1385651893 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.c
 	"Apresentacao.h"
 
-1384000518 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.c
+1385311242 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.c
 	"Logica.h"
 	"..\Persistencia\Persistencia_Produtos.h"
 	"..\Persistencia\Persistencia_Usuario.h"
 
-1384000467 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.c
+1385311242 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.c
 	"Persistencia_Produtos.h"
 
-1384261523 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.c
+1385652294 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.c
 	"Persistencia_Usuario.h"
 	"..\Logica\Logica.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\main.c
+	"Modulos\Apresentacao\Apresentacao.h"
+	"Modulos\Logica\Logica.h"
+	"Modulos\Persistencia\Persistencia_Produtos.h"
+	"Modulos\Persistencia\Persistencia_Usuario.h"
+	"Padroes.h"
+
+1385311242 c:\users\viníciusc\desktop\ps-master\modulos\apresentacao\apresentacao.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1385649337 c:\users\viníciusc\desktop\ps-master\padroes.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1385311242 c:\users\viníciusc\desktop\ps-master\modulos\logica\logica.h
+	"..\..\Padroes.h"
+
+1385311242 c:\users\viníciusc\desktop\ps-master\modulos\persistencia\persistencia_produtos.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1385311242 c:\users\viníciusc\desktop\ps-master\modulos\persistencia\persistencia_usuario.h
+	"..\..\Padroes.h"
+	"..\Logica\Logica.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\modulos\apresentacao\apresentacao.c
+	"Apresentacao.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\modulos\logica\logica.c
+	"Logica.h"
+	"..\Persistencia\Persistencia_Produtos.h"
+	"..\Persistencia\Persistencia_Usuario.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\modulos\persistencia\persistencia_produtos.c
+	"Persistencia_Produtos.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\modulos\persistencia\persistencia_usuario.c
+	"Persistencia_Usuario.h"
+	"..\Logica\Logica.h"
+
+1385311242 source:c:\users\viníciusc\desktop\ps-master\modulos\teste\cutest.c
+	<assert.h>
+	<setjmp.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"CuTest.h"
+
+1385311242 c:\users\viníciusc\desktop\ps-master\modulos\teste\cutest.h
+	<setjmp.h>
+	<stdarg.h>
+
+1385311242 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\teste\cutest.c
+	<assert.h>
+	<setjmp.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"CuTest.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\teste\cutest.h
+	<setjmp.h>
+	<stdarg.h>
+
+1385649513 source:c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\teste\teste.c
+	<stdio.h>
+	<conio.h>
+	"Teste.h"
+
+1385649465 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\teste\teste.h
+	"../Apresentacao/Apresentacao.c"
+	"../Logica/Logica.c"
+	"../Persistencia/Persistencia_Usuario.c"
+	"../Persistencia/Persistencia_Produtos.c"
+	"CuTest.c"
+	"CuTest.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\apresentacao\apresentacao.c
+	"Apresentacao.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\logica\logica.c
+	"Logica.h"
+	"..\Persistencia\Persistencia_Produtos.h"
+	"..\Persistencia\Persistencia_Usuario.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_usuario.c
+	"Persistencia_Usuario.h"
+	"..\Logica\Logica.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\persistencia\persistencia_produtos.c
+	"Persistencia_Produtos.h"
+
+1385311242 c:\users\viníciusc\desktop\ps\trab-ps\trunk\ps\modulos\teste\cutest.c
+	<assert.h>
+	<setjmp.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"CuTest.h"
 

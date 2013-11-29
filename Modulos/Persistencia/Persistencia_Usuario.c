@@ -49,12 +49,3 @@ int armazena_desenvolvedor(Desenvolvedor *desenvolvedor) {
     fclose(arqDesenv);
     return SUC_FUNCAO;
 }
-
-int atualiza_usuario(char* e_mail, Desenvolvedor *desenvolvedor) {
-    FILE *arqDesenv;
-
-    arqDesenv = fopen(DB_DESENVOLVERDOR, "r+");
-
-    fclose(arqDesenv);
-    return SUC_FUNCAO;
-}

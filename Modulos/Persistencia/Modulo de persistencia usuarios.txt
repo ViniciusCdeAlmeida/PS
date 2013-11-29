@@ -1,0 +1,5 @@
+Nome:Persistencia_Usuario.c,Persistencia_Usuario.h
+Tempo estimado gasto no desenvolvimento: 3 dias
+Tempo efetivamente gasto: 5 dias
+Tamanho total estimado: 5kb
+Tamanho efetivo: 3kb
